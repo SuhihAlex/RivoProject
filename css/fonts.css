@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Gilroy', sans-serif;
+    src: url(../fonts/Gilroy-Light.woff2) format(woff2);
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy', sans-serif;
+    src: url(../fonts/Gilroy-Regular.woff2) format(woff2);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy', sans-serif;
+    src: url(../fonts/Gilroy-MediumItalic.woff2) format(woff2);
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Gilroy', sans-serif;
+    src: url(../fonts/Gilroy-Medium.woff2) format(woff2);
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy', sans-serif;
+    src: url(../fonts/Gilroy-SemiBold.woff2) format(woff2);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gilroy', sans-serif;
+    src: url(../fonts/Gilroy-Bold.woff2) format(woff2);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RoadRadio', sans-serif;
+    src: url(../fonts/RoadRadio-Regular.woff2) format(woff2);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RoadRadio', sans-serif;
+    src: url(../fonts/RoadRadio-Bold.woff2) format(woff2);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'RoadRadio', sans-serif;
+    src: url(../fonts/RoadRadio-Black.woff2) format(woff2);
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo', sans-serif;
+    src: url(../fonts/Exo-SemiBold.woff2) format(woff2);
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat', sans-serif;
+    src: url(../fonts/Montserrat-Bold.woff2) format(woff2);
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url(../fonts/Roboto-Regular.woff2) format(woff2);
+    font-weight: 400;
+    font-style: normal;
+}
