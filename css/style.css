@@ -26,6 +26,10 @@
     align-items: center;
 }
 
+.header__logo {
+    z-index: 100;
+}
+
 .header__btn {
     position: relative;
     margin-right: 52px;
@@ -179,9 +183,19 @@ nav {
     transition: all 0.5s;
     width: 100%;
     height: 100%;
-    box-shadow: 10px 0 20px rgba(0, 0, 0, 0.4);
     color: #FFF;
-    padding: 40px 20px;
+    overflow: auto;
+}
+
+.burger-content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 761px;
+    height: 777px;
+    background-image: url(../img/contacts/contacts-bg.svg);
+    background-repeat: no-repeat;
 }
 
 .side-title {
@@ -286,23 +300,173 @@ nav {
     left: 0;
 }
 
-/* Оформление кнопки на панеле */
-.side-button-2 {
-    font-size: 30px;
-    border-radius: 20px;
-    position: absolute;
-    z-index: 1;
-    top: 8px;
-    right: 8px;
-    cursor: pointer;
-    transform: rotate(45deg);
-    color: #BFE2FF;
-    transition: all 280ms ease-in-out;
+/*======= Burger Settings =======*/
+
+.burger-content {
+    position: relative;
+    display: flex;
+    padding-top: 70px;
 }
 
-.side-button-2:hover {
-    transform: rotate(45deg) scale(1.1);
+.burger-content::after {
+    content: '';
+    position: absolute;
+    top: 140px;
+    right: -298px;
+    width: 761px;
+    height: 777px;
+    background-image: url(../img/burger-bg.svg);
+    background-repeat: no-repeat;
+}
+
+.burger-content__left {
+    position: relative;
+    margin-right: 59px;
+    max-width: 606px;
+}
+
+.burger-content__left::after {
+    content: '';
+    position: absolute;
+    left: -258px;
+    top: 385px;
+    width: 136px;
+    height: 148px;
+    background-image: url(../img/bg-3-min.svg);
+    background-repeat: no-repeat;
+}
+
+.burger-content__left::before {
+    content: '';
+    position: absolute;
+    top: 53px;
+    right: 20px;
+    transform: rotate(202deg);
+    width: 111px;
+    height: 113px;
+    background-image: url(../img/bg-2-min.svg);
+    background-repeat: no-repeat;
+}
+
+.burger-nav {
+    margin-bottom: 49px;
+}
+
+.burger-item:not(:last-child) {
+    margin-bottom: 34px;
+}
+
+.burger-link {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 100%;
+    color: var(--white);
+    transition: color .5s ease-in-out;
+}
+
+.burger-link:hover {
+    text-decoration: none;
+    color: var(--yellow);
+    cursor: url('../img/cursor.svg'), auto;
+}
+
+.burger__link-sub {
+    margin-bottom: 16px;
+    font-weight: 500;
+    color: var(--white);
+    transition: color .5s ease-in-out;
+}
+
+.burger__link-sub:hover {
+    text-decoration: none;
+    color: var(--yellow);
+    cursor: url('../img/cursor.svg'), auto;
+}
+
+.burger__link-sub:not(:last-child) {
+    margin-right: 5px;
+}
+
+.burger__block-copy {
+    padding-bottom: 52px;
+}
+
+.burger__block-info {
+    z-index: 100;
+}
+
+.burger__block-info:after {
+    display: none;
+}
+
+.burger__block-info::before {
+    content: '';
+    position: absolute;
+    right: 15px;
+    top: 400px;
+    width: 128px;
+    height: 129px;
+    background-image: url(../img/bg-1-min.svg);
+    background-repeat: no-repeat;
+}
+
+.burger__link-contacts {
+    position: absolute;
+    bottom: 60px;
+    right: 72px;
+}
+
+/*======= Accordion =======*/
+
+.acor-container .acor-body {
+    height: 0;
+    color: rgba(0, 0, 0, 0);
+    box-sizing: border-box;
+    transition: color 0.5s, padding 0.5s;
+    overflow: hidden;
+    font-family: var(--second-family);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 10px 16px rgba(0, 0, 0, 0.2);
+}
+
+.acor-container .acor-body p {
+    margin: 0 0 10px;
+}
+
+.acor-container label {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    color: var(--white);
+    font-weight: 400;
+    box-sizing: border-box;
+    z-index: 100;
+    font-family: var(--second-family);
+    font-size: 52px;
+    margin: 0 0 16px;
+    transition: color .5s;
+}
+
+.acor-container label:hover {
+    color: var(--yellow);
+}
+
+.acor-container input {
+    display: none;
+}
+.acor-container input:checked+label {
     color: #FFF;
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4), 0 28px 30px rgba(0, 0, 0, 0.3);
+}
+
+.acor-container input:checked+label:before {
+    transition: transform .35s;
+    transform: rotate(90deg);
+}
+
+.acor-container input:checked+label+.acor-body {
+    height: auto;
+    color: #000;
 }
 
 /* ========== Hero ==========*/

@@ -17,10 +17,15 @@ window.addEventListener("scroll", progressBar);
 /* Burger */
 const lineBtn = document.querySelector('.side__line');
 const burgerBtn = document.querySelector('.side-button-1-wr');
+const body = document.querySelector("body");
 
 burgerBtn.addEventListener('click', function(e) {
   lineBtn.classList.toggle('_active');
+  body.classList.toggle('menu-opened');
+  body.classList.toggle('menu-closed');
 })
+
+
 
 /* Slider */
 

@@ -8,6 +8,14 @@ body {
     overflow-x: hidden;
 }
 
+body.menu-closed {
+    overflow: auto;
+}
+
+body.menu-opened {
+    overflow: hidden;
+}
+
 *,
 *::before,
 *::after {
