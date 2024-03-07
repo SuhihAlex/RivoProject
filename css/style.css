@@ -34,9 +34,7 @@
     position: relative;
     margin-right: 52px;
     padding: 15px 44px 16px 25px;
-    ;
     background-color: transparent;
-    border-radius: none;
 }
 
 .header__btn::after {
@@ -1780,6 +1778,8 @@ nav {
     cursor: url(../img/cursor.svg), auto;
 }
 
+/* ========== Btn Navigation ==========*/
+
 .upbtn {
     z-index: 9999;
     width: 72px;
@@ -1801,4 +1801,88 @@ nav {
 
 .upbtn:hover {
     transform: scale(1.2) !important;
+}
+
+/* ========== Cookie ==========*/
+
+.cookie_notice {
+    display: none;
+    position: fixed;
+    z-index: 9999999;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: var(--black);
+    padding: 15px 50px;
+    border-top: 1px solid var(--black);
+}
+
+.cookie_notice._active {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cookie__notice-left {
+    display: flex;
+    align-items: center;
+}
+
+/* Оформление кнопок */
+.cookie__privace {
+    margin-right: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    color: var(--white);
+    transition: color .5s ease-in-out;
+}
+
+.cookie__privace:hover {
+    color: var(--yellow);
+    text-decoration: none;
+    cursor: url(../img/cursor.svg), auto;
+}
+
+.cookie__info {
+    margin: 0;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 100%;
+    color: var(--text-color);
+}
+
+.info {
+    position: relative;
+    display: inline-block;
+    margin-right: 30px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    text-align: right;
+    color: var(--white);
+}
+
+.accept {
+    padding: 11px 20px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: right;
+    color: var(--yellow);
+    border: 1px solid var(--yellow);
+}
+
+.cookie_btn {
+    transition: color .5s ease-in-out;
+}
+
+.cookie_btn:hover {
+    color: var(--yellow);
+    text-decoration: none;
+    cursor: url(../img/cursor.svg), auto;
 }
