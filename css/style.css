@@ -1886,3 +1886,134 @@ nav {
     text-decoration: none;
     cursor: url(../img/cursor.svg), auto;
 }
+
+/* ========== Error ==========*/
+
+.error {
+    position: relative;
+    padding-bottom: 189px;
+}
+
+.error::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 646px;
+    height: 940px;
+    background-image: url(../img/404/error-bg.svg);
+    background-repeat: no-repeat;
+}
+
+.error::before {
+    content: '';
+    position: absolute;
+    top: 441px;
+    left: 133px;
+    width: 109px;
+    height: 109px;
+    background-image: url(../img/bg-1-107x107.svg);
+    background-repeat: no-repeat;
+}
+
+.error__header {
+    padding-top: 50px;
+}
+
+.error__item:last-child {
+    margin-right: 53px;
+}
+
+.error-link::after {
+    display: none;
+}
+
+.error__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 308px;
+}
+
+.error__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.error__content::after {
+    content: '';
+    position: absolute;
+    top: 307px;
+    right: -417px;
+    width: 102px;
+    height: 111px;
+    background-image: url(../img/bg-2-102x111.svg);
+    background-repeat: no-repeat;
+}
+
+.error__content img {
+    margin-bottom: 39px;
+}
+
+.error__title {
+    margin: 0;
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 130%;
+    text-align: center;
+    color: var(--white);
+}
+
+.error__title-dark {
+    position: absolute;
+    left: 77px;
+    top: 253px;
+}
+
+.error__descr {
+    margin: 0;
+    margin-bottom: 52px;
+    max-width: 730px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--white);
+}
+
+.error__btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 108px;
+    padding: 15px 47px 16px 26px;
+}
+
+.error__btn:hover {
+    color: var(--yellow);
+    text-decoration: none;
+}
+
+.error__btn::before {
+    content: '';
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    width: 10px;
+    height: 10px;
+    background-image: url(../img/header/make-arrow.svg);
+    background-repeat: no-repeat;
+}
+
+.error__nav-down {
+    right: 0;
+}
+
+.footer-error__item:not(:last-child) {
+    margin-bottom: 35px;
+}
