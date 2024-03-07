@@ -2098,8 +2098,6 @@ nav {
     color: var(--white);
 }
 
-.career__content-body {}
-
 .career__vacancies {
     margin: 0;
     margin-bottom: 52px;
@@ -2108,8 +2106,6 @@ nav {
     line-height: 100%;
     color: var(--white);
 }
-
-.career__list {}
 
 .career__item {
     display: flex;
@@ -2257,4 +2253,324 @@ nav {
 .footer__content-career::after {
     left: -258px;
     top: 280px;
+}
+
+/* ========== Vacancie Page ==========*/
+
+.view {
+    position: relative;
+    padding-top: 156px;
+    padding-bottom: 130px;
+}
+
+.view::after {
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: 0;
+    width: 392px;
+    height: 941px;
+    background-image: url(../img/vacancie/vacancie-bg.svg);
+    background-repeat: no-repeat;
+}
+
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-bottom: 44px;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100%;
+    color: var(--white);
+    transition: color .5s ease-in-out;
+}
+
+.breadcrumbs svg {
+    margin-right: 18px;
+    stroke: var(--white);
+    transition: stroke .5s ease-in-out;
+}
+
+.breadcrumbs:hover {
+    color: var(--yellow);
+    text-decoration: none;
+    cursor: url(../img/cursor.svg), auto;
+}
+
+.breadcrumbs:hover svg {
+    stroke: var(--yellow);
+}
+
+.view__block-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.view__title {
+    position: relative;
+    margin: 0;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 52px;
+    color: var(--white);
+}
+
+.view__btn {
+    position: relative;
+    padding: 20px 43px 19px 26px;
+}
+
+.view__btn::after {
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: 26px;
+    width: 11px;
+    height: 11px;
+    background-image: url(../img/header/make-arrow.svg);
+    background-repeat: no-repeat;
+}
+
+.view__btn:hover {
+    color: var(--yellow);
+}
+
+.view__content {
+    display: flex;
+    gap: 60px;
+    margin-bottom: 46px;
+}
+
+.view__content-left {
+    max-width: 510px;
+}
+
+.view__content-title {
+    margin: 0;
+    margin-bottom: 32px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    color: var(--white);
+}
+
+.view__content-info {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 24px;
+}
+
+.view__content-location {
+    min-width: 255px;
+}
+
+.view__content-location span {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--yellow);
+}
+
+.view__content-subtitle {
+    margin: 0;
+    margin-bottom: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--white);
+}
+
+.view__content-salary {
+    min-width: 255px;
+}
+
+.view__content-salary span{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+    color: var(--yellow);
+}
+
+.view__content-list {
+    margin: 0;
+    margin-bottom: 24px;
+    padding-left: 16px;
+}
+
+.view__content-item {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--white);
+}
+
+.view__content-list--reset {
+    padding: 0;
+}
+
+.view__content-right {
+    max-width: 510px;
+}
+
+.view__block-gallery {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.view__img {}
+
+.view__link {
+    position: absolute;
+    bottom: 378px;
+    right: 72px;
+}
+
+.view__contacts {
+    position: relative;
+    padding-bottom: 190px;
+}
+
+.view__contacts::after {
+    content: '';
+    position: absolute;
+    top: 260px;
+    right: 348px;
+    width: 660px;
+    height: 679px;
+    background-image: url(../img/vacancie/view-bg.svg);
+    background-repeat: no-repeat;
+}
+
+.view__contacts::before {
+    display: none;
+}
+
+.view__block-form {
+    margin-right: 122px;
+    min-width: 445px;
+}
+
+.view__block-form::after {
+    left: -176px;
+    top: -81px;
+}
+
+.file__btn-view {
+    padding: 3px 20px;
+}
+
+.view__block-person {
+    position: relative;
+    top: -70px;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.view__block-contacts {
+    padding: 33px 30px 30px 20px;
+    background-color: var(--yellow);
+}
+
+.view__block-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+.view__block-left {
+}
+
+.view__name {
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 130%;
+    color: #0c0c0c;
+}
+
+.view__pos {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #0c0c0c;
+}
+
+.view__btn-message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 24px;
+    max-height: 56px;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 100%;
+    color: var(--black);
+    border: 1px solid var(--black);
+    transition: color .5s ease-in-out, background .5s ease-in-out;
+}
+
+.view__btn-message:hover {
+    color: var(--yellow);
+    background-color: var(--black);
+    text-decoration: none;
+    cursor: url(../img/cursor.svg), auto;
+}
+
+.view__btn-message svg {
+    margin-right: 12px;
+    fill: #212121;
+    transition: fill .5s ease-in-out;
+}
+
+.view__btn-message:hover svg {
+    fill: var(--yellow);
+}
+
+.view__block-bottom {
+    display: flex;
+    justify-content: space-between;
+    max-width: 453px;
+}
+
+.view__phone {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    color: #0c0c0c;
+    transition: color .5s ease-in-out;
+}
+
+.view__phone:hover {
+    color: var(--black);
+    text-decoration: none;
+    cursor: url(../img/cursor.svg), auto;
+}
+
+.view__block-social {
+    display: flex;
+    gap: 16px;
+}
+
+.view__block-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--black);
+    border-radius: 100%;
+}
+
+.view__block-link:hover {
+    cursor: url(../img/cursor.svg), auto;
 }
