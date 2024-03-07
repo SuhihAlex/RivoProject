@@ -30,6 +30,10 @@
     z-index: 100;
 }
 
+.header__logo:hover {
+    cursor: url(../img/cursor.svg), auto;
+}
+
 .header__btn {
     position: relative;
     margin-right: 52px;
@@ -2016,4 +2020,241 @@ nav {
 
 .footer-error__item:not(:last-child) {
     margin-bottom: 35px;
+}
+
+/* ========== Career Page ==========*/
+
+.career {
+    position: relative;
+    padding-top: 168px;
+}
+
+.career::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    left: 0;
+    width: 392px;
+    height: 940px;
+    background-image: url(../img/career-bg.svg);
+    background-repeat: no-repeat;
+}
+
+.career::before {
+    content: '';
+    position: absolute;
+    bottom: 88px;
+    left: 223px;
+    width: 109px;
+    height: 109px;
+    background-image: url(../img/bg-1-107x107.svg);
+    background-repeat: no-repeat;
+}
+
+.career__content {
+    position: relative;
+}
+
+.career__content::before {
+    content: '';
+    position: absolute;
+    right: -195px;
+    top: 214px;
+    width: 102px;
+    height: 111px;
+    background-image: url(../img/bg-2-102x111.svg);
+    background-repeat: no-repeat;
+}
+
+.career__content-top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 49px;
+}
+
+.career__block-info {
+    margin-top: 8px;
+    max-width: 540px;
+}
+
+.career__title-block {
+    margin: 0;
+}
+
+.career__title {
+    margin: 0;
+    margin-bottom: 26px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    color: var(--white);
+}
+
+.career__descr {
+    margin: 0;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--white);
+}
+
+.career__content-body {}
+
+.career__vacancies {
+    margin: 0;
+    margin-bottom: 52px;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 100%;
+    color: var(--white);
+}
+
+.career__list {}
+
+.career__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 27px;
+    padding-left: 30px;
+    border: 1px solid var(--black);
+}
+
+.career__item:last-child {
+    margin-bottom: 0;
+}
+
+.career__item-left {
+    display: flex;
+    align-items: center;
+}
+
+.career__vacancies-position {
+    margin-right: 10px;
+    padding: 0 4px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #000;
+    background: var(--white);
+    text-transform: uppercase;
+}
+
+.career__vacancies-name {
+    margin: 0;
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    color: var(--white);
+}
+
+.career__vacancies-hot {
+    margin-left: 10px;
+    padding: 0 4px;
+    font-weight: 600;
+    font-size: 12px;
+    color: #000;
+    background: var(--yellow);
+    text-transform: uppercase;
+}
+
+.career__vacancies-salary {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--white);
+}
+
+.career__vacancies-salary--php {
+    margin-left: 70px;
+}
+
+.career__vacancies-salary--word {
+    margin-right: 26px;
+}
+
+.career__item-right {
+    display: flex;
+    align-items: center;
+}
+
+.career__vacancies-city {
+    display: block;
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--white);
+}
+
+.career__link {
+    padding: 24px 32px;
+    transition: color .5s ease-in-out, background .5s ease-in-out;
+}
+
+.career__link:hover {
+    color: var(--black);
+    background-color: var(--yellow);
+    text-decoration: none;
+}
+
+.career__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.career__link-contacts {
+    position: relative;
+    top: -60px;
+}
+
+.form__item-career {
+    margin-bottom: 35px;
+}
+
+.career__contacts {
+    padding-bottom: 258px;
+}
+
+.career__contacts::before {
+    top: 60px;
+}
+
+.contacts__block-form__career::after {
+    left: -176px;
+    top: -80px;
+}
+
+.contacts__block-form__career:before {
+    content: '';
+    position: absolute;
+    bottom: 131px;
+    left: -258px;
+    width: 136px;
+    height: 148px;
+    background-image: url(../img/bg-3-min.svg);
+    background-repeat: no-repeat;
+}
+
+.contacts__block-info__career::after {
+    top: 249px;
+}
+
+.footer__career::after {
+    right: 416px;
+    top: 257px;
+}
+.footer__career::before {
+    top: -70px;
+}
+
+.footer__content-career::before {
+    top: -66px;
+    left: 557px;
+}
+
+.footer__content-career::after {
+    left: -258px;
+    top: 280px;
 }
