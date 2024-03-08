@@ -626,6 +626,20 @@ nav {
     cursor: url(../img/cursor.svg), auto;
 }
 
+.hero__link img {
+    animation: spin 5s linear 0s infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 /* ========== About ==========*/
 
 .about {
@@ -825,6 +839,20 @@ nav {
 
 .about__link:hover {
     cursor: url(../img/cursor.svg), auto;
+}
+
+.about__link img {
+    animation: spin 5s linear 0s infinite;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 /* ========== Services ==========*/
@@ -2758,4 +2786,65 @@ nav {
 
 .privacy__item span {
     color: var(--white);
+}
+
+/* ========== ThankYou Page ==========*/
+
+.thank {
+    padding-top: 239px;
+    padding-bottom: 187px;
+}
+
+.thank__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thank__content img {
+    position: relative;
+    top: -23px;
+    left: -30px;
+    margin-bottom: 36px;
+}
+
+.thank__content::after {
+    content: '';
+    position: absolute;
+    right: -225px;
+    bottom: 180px;
+    width: 102px;
+    height: 111px;
+    background-image: url(../img/bg-2-102x111.svg);
+    background-repeat: no-repeat;
+}
+
+.thank__title {
+    margin: 0;
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 130%;
+    text-align: center;
+    color: var(--white);
+}
+
+.thank__descr {
+    margin: 0;
+    margin-bottom: 243px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    color: var(--white);
+}
+
+.thank__title-dark {
+    position: absolute;
+    top: 318px;
+    font-family: var(--second-family);
+    font-weight: 700;
+    font-size: 100px;
 }
