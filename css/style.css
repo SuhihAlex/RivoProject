@@ -635,9 +635,9 @@ nav {
 .about::after {
     content: '';
     position: absolute;
-    bottom: 80px;
+    bottom: 68px;
     width: 177px;
-    height: 316px;
+    height: 328px;
     background-image: url(../img/about/about-bg-1.svg);
     background-repeat: no-repeat;
 }
@@ -786,7 +786,7 @@ nav {
     left: 37px;
     transform: rotate(29deg);
     width: 159px;
-    height: 159px;
+    height: 160px;
     background-image: url(../img/bg-1.svg);
     background-repeat: no-repeat;
 }
@@ -2422,11 +2422,9 @@ nav {
     gap: 30px;
 }
 
-.view__img {}
-
 .view__link {
     position: absolute;
-    bottom: 378px;
+    bottom: 368px;
     right: 72px;
 }
 
@@ -2481,9 +2479,6 @@ nav {
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
-}
-
-.view__block-left {
 }
 
 .view__name {
@@ -2573,4 +2568,194 @@ nav {
 
 .view__block-link:hover {
     cursor: url(../img/cursor.svg), auto;
+}
+
+/* ========== Privacy Page ==========*/
+
+.privacy {
+    position: relative;
+    padding-top: 154px;
+    padding-bottom: 125px;
+}
+
+.privacy::after {
+    content: '';
+    position: absolute;
+    top: 601px;
+    right: 0;
+    width: 371px;
+    height: 813px;
+    background-image: url(../img/privacy/privacy-bg-top1.svg);
+    background-repeat: no-repeat;
+}
+
+.privacy__breadcrumbs {
+    margin-bottom: 55px;
+}
+
+.privacy__content {
+    margin-bottom: 72px;
+}
+
+.privacy__content:last-child {
+    margin-bottom: 0;
+}
+
+.privacy__title {
+    margin: 0;
+    margin-bottom: 52px;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 130%;
+    color: var(--white);
+}
+
+.privacy__title-bottom {
+    margin-bottom: 37px;
+}
+
+.privacy__block-info--top {
+    margin-bottom: 52px;
+}
+
+.privacy__block-info--bottom {
+    margin-bottom: 37px;    
+}
+
+
+.privacy__block-info:last-child {
+    margin-bottom: 0;
+}
+
+.privacy__block-info span {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--white);
+}
+
+.privacy-bg-left {
+    position: relative;
+}
+
+.privacy-bg-left::after {
+    content: '';
+    position: absolute;
+    top: -346px;
+    left: -596px;
+    width: 487px;
+    height: 945px;
+    background-image: url(../img/privacy/privacy-bg-top2.svg);
+    background-repeat: no-repeat;
+}
+
+.privacy-bg-right {
+    position: relative;
+}
+
+.privacy-bg-right::before {
+    content: '';
+    position: absolute;
+    top: -264px;
+    right: -578px;
+    width: 371px;
+    height: 813px;
+    background-image: url(../img/privacy/privacy-bg-top1.svg);
+    background-repeat: no-repeat;
+}
+
+.privacy-bg-left--art2::after {
+    content: '';
+    position: absolute;
+    top: 503px;
+    left: -593px;
+    width: 487px;
+    height: 945px;
+    background-image: url(../img/privacy/privacy-bg-top2.svg);
+    background-repeat: no-repeat;
+}
+
+.privacy-bg-right--art5::before {
+    top: -294px;
+}
+
+.privacy-bg-left--art7::after {
+    top: 11px;
+}
+
+.privacy__text {
+    margin: 0;
+    max-width: 715px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--white);
+}
+
+.privacy__subtitle {
+    margin: 0;
+    margin-bottom: 24px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    color: var(--white);
+}
+
+.privacy__subtitle-bottom {
+    margin-bottom: 32px;
+}
+
+.privacy__descr {
+    margin: 0;
+    margin-bottom: 34px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--white);
+}
+
+.privacy__list {
+    margin: 0;
+    margin-bottom: 33px;
+    padding: 0;
+    list-style: inside;
+}
+
+.privacy__list-sub {
+    margin-top: 18px;
+    padding-left: 25px;
+}
+
+.privacy__item {
+    margin-bottom: 18px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: var(--yellow);
+}
+
+.privacy__item-sub {
+    margin-bottom: 18px;
+}
+
+.privacy__item-sub:last-child {
+    margin-bottom: 0;
+}
+
+.privacy__item:last-child {
+    margin-bottom: 0;
+}
+
+.privacy__item a {
+    color: var(--yellow);
+}
+
+.privacy__item:hover a {
+    color: var(--yellow);
+    cursor: url(../img/cursor.svg), auto;
+    text-decoration: none;
+}
+
+.privacy__item span {
+    color: var(--white);
 }

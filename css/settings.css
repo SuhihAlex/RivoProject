@@ -5,7 +5,7 @@ html {
 body {
     font-family: var(--font-family);
     background-color: #010101;
-    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 body.menu-closed {
@@ -101,7 +101,15 @@ a {
 }
 
 .container-fluid {
+    margin: 0 auto;
+    padding: 0 var(--container-offset);
     max-width: 1807px;
+}
+
+.container-privacy {
+    margin: 0 auto;
+    padding: 0 var(--container-offset);
+    max-width: 765px;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
