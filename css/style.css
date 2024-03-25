@@ -720,6 +720,7 @@ nav {
     height: 348px;
     overflow: hidden;
     border-radius: 220px;
+    background-image: url(../img/about/video-preview.jpg);
 }
 
 .about__video--block::before {
